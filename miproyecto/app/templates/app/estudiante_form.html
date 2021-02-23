@@ -1,0 +1,30 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<h1>Formulario Estudiante</h1>
+<form method="POST">{% csrf_token %}
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>:</td>
+            <td>{{ form.nombre }}</td>
+        </tr>
+        <tr>
+            <td>Identificadorr</td>
+            <td>:</td>
+            <td>{{ form.identificador }}</td>
+        </tr>
+        <tr>
+            <td>Departamento</td>
+            <td>:</td>
+            <td>{{ form.departamento }}</td>
+        </tr>
+        <tr>
+            <td>Direccion</td>
+            <td>:</td>
+            <td>{{ form.direccion }}</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Guardar"></td>
+        </tr>
+    </table>
+</form>
